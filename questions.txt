@@ -1,0 +1,7 @@
+Q: what will be the format of csv?
+A: 
+
+Q: will the labels be given to us?
+A:
+
+Q: what all we need to be displayed on the website regarding the file that you upload.
