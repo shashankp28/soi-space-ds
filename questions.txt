@@ -1,7 +1,12 @@
 Q: what will be the format of csv?
-A: 
+A: Every coloumn in the given dataset except for the labels.
 
 Q: will the labels be given to us?
-A:
+A: The labels will not be given.
 
 Q: what all we need to be displayed on the website regarding the file that you upload.
+A: 
+
+Q: Accuracy, Precision, etc. for which data?
+A: The data given in github + training data taken from external sources.
+
