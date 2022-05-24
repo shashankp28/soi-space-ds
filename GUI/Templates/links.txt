@@ -1,0 +1,4 @@
+https://streamlit.io/gallery
+https://pythonwife.com/file-upload-download-with-streamlit/
+https://calmcode.io/streamlit/sidebar.html
+

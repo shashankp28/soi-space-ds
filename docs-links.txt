@@ -1,0 +1,21 @@
+make a google doc and record what all you are using and paste that link here.
+ML - Anand, Arvind, Harrithha 
+GUI - shashank, Vyshnavi
+
+
+We may use plantet id.
+
+
+Source: https://github.com/i-was-here/SpaceDataSci-SOI
+
+Extra: https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=tce
+
+Meet 9pm (general): meet.google.com/gyn-kjij-qua
+
+Meet 9pm (GUI): meet.google.com/jtm-btfu-rpv
+
+Meet 9pm (ML): 
+
+Rough Documents: https://docs.google.com/document/d/1AmioSYBaFm6a3CbnCt58ewtnJ03WzD89bpnkoDzhuHg/edit?usp=sharing
+
+Streamlit Tutorial: https://www.youtube.com/watch?v=UN4DaSAZel4&list=PLuU3eVwK0I9PT48ZBYAHdKPFazhXg76h5&ab_channel=HarshGupta
