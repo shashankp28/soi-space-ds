@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 from multiapp import MultiApp
 from functools import partial
-from services import show, plot
+from services import show, plot, iplots
 
 rad = st.sidebar.radio("Tool or Help", ['Tool', 'Help'])
 
@@ -21,6 +21,7 @@ if rad == "Tool":
         app = MultiApp()
         app.add_app('Show data', partial(show.app, data))
         app.add_app('Plot data', partial(plot.app, data))
+        app.add_app('Plots', iplots.app)
         app.run()
 
 if rad == "Help":
