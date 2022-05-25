@@ -7,8 +7,6 @@ from services import show, plot
 
 rad = st.sidebar.radio("Tool or Help", ['Tool', 'Help'])
 
-data = None
-
 
 def refresh():
     rad = "Tool"

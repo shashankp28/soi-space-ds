@@ -7,7 +7,7 @@ import plotly.graph_objects as pgo
 df = pd.DataFrame(np.random.randn(10, 5),
                   columns=('col %d' % i
                            for i in range(5)))
-print(df)
+
 st.line_chart(df)
 st.bar_chart(df)
 
