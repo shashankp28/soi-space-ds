@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from services.multiapp import MultiApp
 from functools import partial
-from pages import show, analysis, help, custom, download, three_d
+from pages import show, analysis, help, custom, download, three_d, page1
 
 
 def refresh():
@@ -12,6 +12,7 @@ def refresh():
 file = st.file_uploader('Upload CSV file',
                         type='csv', help="Format")
 if file is not None:
+    # verification
     st.button("Refresh", on_click=refresh)
     data = pd.read_csv(file)
     app = MultiApp()

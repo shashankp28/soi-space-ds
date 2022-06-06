@@ -4,7 +4,7 @@ import streamlit as st
 import plotly.graph_objects as pgo
 
 
-def app():
+def app(df, a, n, alpha):
     df = pd.DataFrame(np.random.randn(10, 5),
                       columns=('col %d' % i
                                for i in range(5)))
