@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from services.multiapp import MultiApp
 from functools import partial
-from pages import show, analysis, help, custom, download, three_d, page1
+from pages import show, analysis, help, custom, download, three_d
 
 
 def refresh():
