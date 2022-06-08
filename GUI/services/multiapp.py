@@ -17,8 +17,18 @@ class MultiApp:
         return self.titles.index(title)
 
     def run(self):
-        app = st.selectbox(
-            'Navigation',
+        app = st.radio(
+            '',
             self.titles)
-
+        st.markdown(
+    """ <style>
+            div[role="radiogroup"] {
+                position: absolute !important;
+                bottom:90px !important;
+                left:-380px !important;
+            }
+        </style>
+        """,
+    unsafe_allow_html=True
+)
         self.apps[self.get_index(app)]()
