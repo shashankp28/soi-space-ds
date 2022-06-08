@@ -9,7 +9,7 @@ def refresh():
     pass
 
 
-st.set_page_config(page_title='Keplar', page_icon='favicon.jpg')
+st.set_page_config(page_title='Keplar', page_icon='components/favicon.jpg')
 
 file = st.file_uploader('Upload CSV file',
                         type='csv', help="Format")
