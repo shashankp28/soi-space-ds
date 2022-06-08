@@ -41,6 +41,7 @@ def app(data):
     h = np.random.random(50)
     i = np.random.random(50)
     fig = px.scatter_3d(data_frame=data, x=option_1, y=option_2, z=option_3, title='3D Plot', width=700, height=700)
+    fig.update_traces(marker_size = 2.5)
     st.plotly_chart(fig)
     
     
