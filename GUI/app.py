@@ -9,10 +9,13 @@ def refresh():
     pass
 
 
+st.set_page_config(page_title='Keplar', page_icon='components/favicon.jpg')
+
 file = st.file_uploader('Upload CSV file',
-                        type='csv', help="Format")
-if file is not None:
+                        type='csv', help="Please refer below for the format of CSV file.")
+if file:
     # verification
+    # Prediction
     st.button("Refresh", on_click=refresh)
     data = pd.read_csv(file)
     app = MultiApp()
@@ -20,6 +23,9 @@ if file is not None:
     app.add_app('Analysis', analysis.app)
     app.add_app('Custom Plots', custom.app)
     app.add_app('3-D Plots', partial(three_d.app, data))
-    app.add_app('Download', download.app)
+    app.add_app('Download', partial(download.app, data, file.name))
     app.add_app('Help', help.app)
     app.run()
+else:
+    st.write("Format to be uploaded")
+    # @Arvind
