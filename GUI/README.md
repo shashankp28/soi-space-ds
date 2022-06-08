@@ -1,6 +1,6 @@
 # Summer of Innovation 2022 Space Data Science
 
-## Team Keplar
+## Team Kepler
 
 This is a standalone web-app used for classification of planetary data. The web-app can be setup by following the shown steps.
 
@@ -21,7 +21,7 @@ cd soi-space-ds
 python3 -m venv .env
 source .env/bin/activate
 ```
-5. Execute the ***run.sh*** file to install dependencies and locally host the web-app. `
+5. Execute the ***run.sh*** file to install dependencies and locally host the web-app.
 ```
 chmod 755 run.sh && ./run.sh
 ```
@@ -32,3 +32,4 @@ Once the setup is complete, the web-app can be opened using *loalhost* ***[Port 
 1. Initially upload a csv file in the format shown in the web-app.
 2. Next navigate to the ***Help*** tab under the dropdown menu.
 3. Detailed instructions on using the application is given, including a short video.
+
