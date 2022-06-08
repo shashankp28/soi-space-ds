@@ -1,7 +1,5 @@
 # Summer of Innovation 2022 Space Data Science
 
-## Team Keplar
-=======
 ## Team Kepler
 
 This is a standalone web-app used for classification of planetary data. The web-app can be setup by following the shown steps.
