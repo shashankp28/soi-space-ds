@@ -12,8 +12,8 @@ def refresh():
 st.set_page_config(page_title='Keplar', page_icon='components/favicon.jpg')
 
 file = st.file_uploader('Upload CSV file',
-                        type='csv', help="Format")
-if file is not None:
+                        type='csv', help="Please refer below for the format of CSV file.")
+if file:
     # verification
     # Prediction
     st.button("Refresh", on_click=refresh)
@@ -26,3 +26,6 @@ if file is not None:
     app.add_app('Download', partial(download.app, data, file.name))
     app.add_app('Help', help.app)
     app.run()
+else:
+    st.write("Format to be uploaded")
+    # @Arvind
