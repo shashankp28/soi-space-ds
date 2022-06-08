@@ -21,7 +21,7 @@ cd soi-space-ds
 python3 -m venv .env
 source .env/bin/activate
 ```
-5. Execute the ***run.sh*** file to install dependencies and locally host the web-app. `
+5. Execute the ***run.sh*** file to install dependencies and locally host the web-app.
 ```
 chmod 755 run.sh && ./run.sh
 ```
