@@ -21,12 +21,12 @@ cd soi-space-ds
 python3 -m venv .env
 source .env/bin/activate
 ```
-5. Execute the ***run.sh*** file to install deoendencies and locally host the web-app. `
+5. Execute the ***run.sh*** file to install dependencies and locally host the web-app. `
 ```
 chmod 755 run.sh && ./run.sh
 ```
 
-Once the setup is completed, the web-app can be opened using *loalhost* ***[Port 8501](http://192.168.0.103:8501)***.
+Once the setup is complete, the web-app can be opened using *loalhost* ***[Port 8501](http://192.168.0.103:8501)***.
 
 ### Using the application
 1. Initially upload a csv file in the format shown in the web-app.
