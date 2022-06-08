@@ -19,7 +19,7 @@ if file is not None:
     app.add_app('Show data', partial(show.app, data))
     app.add_app('Analysis', analysis.app)
     app.add_app('Custom Plots', custom.app)
-    app.add_app('3-D Plots', three_d.app)
+    app.add_app('3-D Plots', partial(three_d.app, data))
     app.add_app('Download', download.app)
     app.add_app('Help', help.app)
     app.run()
