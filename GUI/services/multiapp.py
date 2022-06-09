@@ -17,10 +17,18 @@ class MultiApp:
         return self.titles.index(title)
 
     def run(self):
+        st.markdown(""" <div role=nav_head>
+           <h3>Navigation</h3></div> """, unsafe_allow_html=True)
         app = st.radio('',
             self.titles)
         st.markdown(""" <style>
             div[role="radiogroup"]
+            {
+                position: absolute !important;
+                bottom: -60px !important;
+                left: -380px !important;
+            }
+            div[role="nav_head"]
             {
                 position: absolute !important;
                 bottom: 40px !important;
