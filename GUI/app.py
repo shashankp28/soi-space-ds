@@ -5,6 +5,7 @@ from services.multiapp import MultiApp
 from functools import partial
 from pages import show, analysis, help, custom, download, three_d
 
+
 def refresh():
     pass
 

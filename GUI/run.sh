@@ -1,4 +1,6 @@
-sudo apt-get update
-sudo apt-get upgrade
-pip install -r requirements.txt
+Directory=".env"
+if [ -d "$Directory" ];
+then
+	source .env/bin/activate
+fi
 streamlit run app.py

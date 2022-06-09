@@ -1,8 +1,5 @@
-import re
-
-
 def check_format(df):
-    correct = True
+    # correct = True
     error_msg = ""
     required_columns = {'kepid' : 0, 'tce_plnt_num' : 0, 'tce_rogue_flag' : 0, 'tce_period' : 0,
        'tce_period_err' : 0, 'tce_time0bk' : 0, 'tce_time0bk_err' : 0, 'tce_impact' : 0,
