@@ -25,10 +25,14 @@ def app(data):
         st.dataframe(data)
     else:
 <<<<<<< HEAD
+<<<<<<< HEAD
         columns = st.multiselect('Select Columns', data.columns.tolist()+['All'],default=[data.columns.tolist()[0],data.columns.tolist()[1]])
 =======
         columns = st.multiselect('Select Columns', data.columns.tolist()+['All'],default=[data.columns.tolist()[1],data.columns.tolist()[-1]])
 >>>>>>> 1e07f0602feeb7e17bea2cb9b3b736375d6cebcd
+=======
+        columns = st.multiselect('Select Columns', data.columns.tolist()+['All'],default=[data.columns.tolist()[1],data.columns.tolist()[-1]])
+>>>>>>> 97c291289dbef706fb4c85027e8f895161bf7305
 
         if 'All' in columns:
             columns = data.columns.tolist()
