@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import pickle
 from services.services import check_format
 from services.multiapp import MultiApp
 from functools import partial
