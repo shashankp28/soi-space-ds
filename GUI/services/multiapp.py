@@ -25,13 +25,13 @@ class MultiApp:
             div[role="radiogroup"]
             {
                 position: absolute !important;
-                bottom: -60px !important;
+                bottom: 40px !important;
                 left: -380px !important;
             }
             div[role="nav_head"]
             {
                 position: absolute !important;
-                bottom: 40px !important;
+                bottom: 140px !important;
                 left: -380px !important;
             }
             footer {visibility: hidden;}</style> """, unsafe_allow_html=True)
