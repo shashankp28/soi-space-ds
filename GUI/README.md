@@ -1,5 +1,7 @@
 # Summer of Innovation 2022 Space Data Science
 
+### This software is shared under GNU General Public License.
+
 ## Team Kepler
 
 This is a standalone web-app used for classification of planetary data. The web-app can be setup by following the shown steps.
