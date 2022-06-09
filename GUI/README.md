@@ -43,5 +43,5 @@ Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 
 ### Using the application
 
 1. Initially upload a csv file in the format shown in the web-app.
-2. Next navigate to the **_Help_** tab under the dropdown menu.
+2. Next navigate to the **_Help_** tab from the side nav bar.
 3. Detailed instructions on using the application is given, including a short video.
