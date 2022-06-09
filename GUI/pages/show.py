@@ -38,6 +38,6 @@ def app(data):
         if start!=end and len(columns)!=0:
             index = [i for i in range(start,end+1)]
             customized_data.insert(loc=0,column='',value=index)
-        customized_data_styler = customized_data.style.hide_index()
 
+        customized_data_styler = customized_data.style.hide(axis='index')
         st.write(customized_data_styler.to_html(), unsafe_allow_html=True)
