@@ -7,7 +7,7 @@ import plotly.express as px
 
 
 def app(data):
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
     x = ['tce_period', 'tce_time0bk', 'tce_impact', 'tce_duration', 'tce_depth',
          'tce_model_snr', 'tce_prad', 'tce_eqt', 'tce_steff', 'tce_slogg', 'tce_sradius']
     y = x.copy()
