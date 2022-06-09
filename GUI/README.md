@@ -1,6 +1,6 @@
 # Summer of Innovation 2022 Space Data Science
 
-### This software is shared under GNU General Public License.
+### This software is shared under MIT License.
 
 ## Team Kepler
 
