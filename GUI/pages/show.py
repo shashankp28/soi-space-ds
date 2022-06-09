@@ -24,7 +24,7 @@ def app(data):
     if data.shape[0]<6:
         st.dataframe(data)
     else:
-        columns = st.multiselect('Select Columns', data.columns.tolist()+['All'],default=[data.columns.tolist()[0],data.columns.tolist()[1]])
+        columns = st.multiselect('Select Columns', data.columns.tolist()+['All'],default=[data.columns.tolist()[1],data.columns.tolist()[14]])
 
         if 'All' in columns:
             columns = data.columns.tolist()
