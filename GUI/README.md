@@ -30,7 +30,7 @@ _When prompted, choose whether to install packages on a virtual environment._
 5. Host the web-app locally using the following command
 
 ```
-chmod 755 run.sh && ./run.sh
+./run.sh
 ```
 
 Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 8501](http://192.168.0.103:8501)_**.
