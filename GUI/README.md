@@ -33,8 +33,8 @@ _When prompted, choose whether to install packages on a virtual environment._
 chmod 755 run.sh && ./run.sh
 ```
 
-Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 8501](http://192.168.0.103:8501)_**.
-_Use Ctrl+C inside the terminal to stop_
+Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 8501](http://localhost:8501)_**.
+**Use Ctrl+C inside the terminal to stop.**
 
 ### Note
 
