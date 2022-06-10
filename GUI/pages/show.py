@@ -38,8 +38,8 @@ def app(data):
             end = st.number_input("Select End Row",step=1,min_value=5,max_value=data.shape[0],value=5)
 
         customized_data = customized_data.iloc[start-1:end]
-        if start!=end and len(columns)!=0:
-            index = [i for i in range(start,end+1)]
-            customized_data.insert(loc=0,column='',value=index)
-
-        st.table(customized_data.style.applymap(left_align))
+        # if start!=end and len(columns)!=0:
+            # index = [i for i in range(start,end+1)]
+            # customized_data.insert(loc=0,column='',value=index)
+        st.dataframe(customized_data.style.applymap(left_align))
+        # st.table(customized_data.style.applymap(left_align))
