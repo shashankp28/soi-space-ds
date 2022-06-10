@@ -9,13 +9,13 @@ def app():
     st.subheader('Team Details')
 
     col1, col2, col3 = st.columns(3)
-    original = Image.open('../images/1.jpeg')
+    original = Image.open('1.jpeg')
     original = original.resize((200, 250), Image.ANTIALIAS)
     col1.image(original, use_column_width=True)
-    original = Image.open('../images/download.png')
+    original = Image.open('2.jpeg')
     original = original.resize((200, 250), Image.ANTIALIAS)
     col2.image(original, use_column_width=True)
-    original = Image.open('../images/download.png')
+    original = Image.open('4.jpeg')
     original = original.resize((200, 250), Image.ANTIALIAS)
     col3.image(original, use_column_width=True)
 
@@ -41,14 +41,14 @@ def app():
             I rolled actual dice for these, so they're *guaranteed* to
             be random.
         """)
-    col1, col2 = st.columns(2)
-    original = Image.open('../images/4.jpeg')
+    col1, col2,col3 = st.columns(3)
+    original = Image.open('4.jpeg')
     original = original.resize((300, 450), Image.ANTIALIAS)
     col1.image(original, use_column_width=True)
-    original = Image.open('../images/5.jpeg')
+    original = Image.open('5.jpeg')
     original = original.resize((300, 450), Image.ANTIALIAS)
     col2.image(original, use_column_width=True)
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     with col1:
         expander = st.expander("See explanation")
         expander.write("""
