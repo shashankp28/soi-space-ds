@@ -1,4 +1,4 @@
-from copyreg import pickle
+import pickle
 
 
 def check_format(df):
@@ -42,7 +42,7 @@ def predict(df):
 
     delete = ["kepid","tce_plnt_num","tce_rogue_flag","tce_insol","tce_impact","tce_insol_err","tce_period_err","tce_time0bk_err","tce_impact_err","tce_duration_err","tce_depth_err","tce_prad_err","tce_eqt_err","tce_eqt_err","tce_steff_err","tce_slogg_err","tce_sradius_err"]
     data_new = df.drop(delete,axis=1)
-    data_new.dropna(subset=['tce_period', 'tce_time0bk', 'tce_duration', 'tce_depth','tce_model_snr', 'tce_prad', 'tce_eqt', 'tce_steff', 'tce_slogg','tce_sradius', 'av_training_set'], inplace=True)
+    data_new.dropna(subset=['tce_period', 'tce_time0bk', 'tce_duration', 'tce_depth','tce_model_snr', 'tce_prad', 'tce_eqt', 'tce_steff', 'tce_slogg','tce_sradius'], inplace=True)
     
     mean = {
         'tce_period' : 2.93291512e+01,
