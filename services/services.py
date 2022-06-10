@@ -75,7 +75,7 @@ def predict(df):
         data_new[i] -= mean[i]
         data_new[i] /= std_dev[i]
 
-    model = pickle.load(open('../ML/model.pkl', "rb"))
+    model = pickle.load(open('./ML/model.pkl', "rb"))
 
     # prediction coloumn
     prediction = model.predict(data_new)
