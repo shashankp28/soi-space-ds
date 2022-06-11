@@ -4,18 +4,18 @@ import streamlit as st
 import plotly.graph_objects as pgo
 
 
-def app(df, a, n, alpha):
-    df = pd.DataFrame(np.random.randn(10, 5),
-                      columns=('col %d' % i
-                               for i in range(5)))
+def app(df):
 
-    st.line_chart(df)
-    st.bar_chart(df)
+    predicted_labels = ['AFP', 'PC', 'NTP']
+    values = [len(df[df['predicted'] == 'AFP']), len(df[df['predicted'] == 'PC']), len(df[df['predicted'] == 'NTP'])]
 
-    countries = ['a', 'b', 'c']
-    values = [100, 200, 150]
+    fig = pgo.Figure(
+        pgo.Pie(
+        labels = predicted_labels,
+        values = values,
+        hoverinfo = "label+percent",
+        textinfo = "value"
+    ))
 
-    fig = pgo.Figure(pgo.Pie(labels=countries, values=values,
-                             hoverinfo='label+percent', textinfo='value'))
-
+    st.header("Prediction")
     st.plotly_chart(fig)
