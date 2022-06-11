@@ -7,8 +7,9 @@ from functools import partial
 from pages import show, analysis, help, custom, download, three_d, about
 
 
-st.set_page_config(page_title='Kepler', page_icon='images/favicon.jpg')
-set_background('images/background.png')
+st.set_page_config(page_title='Kepler',
+                   page_icon='components/graphics/favicon.jpg')
+set_background('components/graphics/background.png')
 
 file = st.file_uploader('Upload CSV file',
                         type='csv', help="Please refer below for the format of CSV file.")
@@ -31,6 +32,6 @@ if file:
         err = '<p style="font-family:Courier; color:Red; font-size: 20px;">' + \
             error_msg+': Please follow the format</p>'
         st.markdown(err, unsafe_allow_html=True)
-        show_format("services/format.json")
+        show_format("components/format.json")
 else:
-    show_format("services/format.json")
+    show_format("components/format.json")
