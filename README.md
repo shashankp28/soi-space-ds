@@ -26,7 +26,7 @@ git clone https://github.com/shashankp28/soi-space-ds.git
 cd soi-space-ds
 ```
 
-4. Execute the **_setup.sh_** file to install dependencies and locally host the web-app.
+4. Execute the **_setup.sh_** file to install dependencies and create `run.sh` file.
 
 ```
 chmod 755 setup.sh && ./setup.sh

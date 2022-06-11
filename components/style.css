@@ -26,9 +26,10 @@ body
 .innovate
 {
   position: absolute;
-  left:60%;
-  width: 500px;
-  top: 16%;
+  left:65%;
+  width: 400px;
+  height: 400px;
+  top: 20%;
 }
 .team-head
 {
@@ -134,12 +135,13 @@ body
 .gif-hw
 {
   margin-left: 60px;
-  width: 400px;
+  width: 300px;
   height: 400px;
 }
 .card-matter
 {
   color: white;
+  font-size: 20px;
   padding-left: 50px;
   padding-top: 10px;
   font-family: Arial;
