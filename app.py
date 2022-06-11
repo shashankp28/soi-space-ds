@@ -1,21 +1,14 @@
-from tabnanny import check
 import streamlit as st
 import pandas as pd
-from services.services import check_format, predict
+from services.design import *
+from services.services import *
 from services.multiapp import MultiApp
 from functools import partial
 from pages import show, analysis, help, custom, download, three_d, about
 
 
-def refresh():
-    pass
-
-
-def show_format():
-    pass
-
-
 st.set_page_config(page_title='Kepler', page_icon='images/favicon.jpg')
+set_background('./images/background.jpg')
 
 page_bg_img = '''
 <style>

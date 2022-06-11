@@ -7,7 +7,6 @@ def app():
     st.subheader('Team Details')
 
     col1, col2, col3 = st.columns(3)
-<<<<<<< HEAD
     original = Image.open('./images/1.jpeg')
     original = original.resize((200, 250), Image.ANTIALIAS)
     col1.image(original, use_column_width=True)
@@ -15,15 +14,6 @@ def app():
     original = original.resize((200, 250), Image.ANTIALIAS)
     col2.image(original, use_column_width=True)
     original = Image.open('./images/3.jpeg')
-=======
-    original = Image.open('1.jpeg')
-    original = original.resize((200, 250), Image.ANTIALIAS)
-    col1.image(original, use_column_width=True)
-    original = Image.open('2.jpeg')
-    original = original.resize((200, 250), Image.ANTIALIAS)
-    col2.image(original, use_column_width=True)
-    original = Image.open('4.jpeg')
->>>>>>> 859405cd693b3ce3ddeed14101b199c4ce1cba04
     original = original.resize((200, 250), Image.ANTIALIAS)
     col3.image(original, use_column_width=True)
 
@@ -46,19 +36,11 @@ def app():
             Arvind Kumar M\n
             200020008@iitdh.ac.in
         """)
-<<<<<<< HEAD
     col1, col2, col3 = st.columns(3)
     original = Image.open('./images/4.jpeg')
     original = original.resize((300, 450), Image.ANTIALIAS)
     col1.image(original, use_column_width=True)
     original = Image.open('./images/5.jpeg')
-=======
-    col1, col2,col3 = st.columns(3)
-    original = Image.open('4.jpeg')
-    original = original.resize((300, 450), Image.ANTIALIAS)
-    col1.image(original, use_column_width=True)
-    original = Image.open('5.jpeg')
->>>>>>> 859405cd693b3ce3ddeed14101b199c4ce1cba04
     original = original.resize((300, 450), Image.ANTIALIAS)
     col2.image(original, use_column_width=True)
     col1, col2, col3 = st.columns(3)
