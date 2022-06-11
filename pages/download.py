@@ -46,6 +46,6 @@ def download_block(df, file_name, title):
 def app(df, name):
     file_name = name.split(".csv")[0]
     df2 = df.copy(deep=True)
-    df2 = df2["av_training_set"]
+    df2 = df2["predicted"]
     download_block(df2, file_name+"_predictions", "Download Only Predictions")
     download_block(df, file_name+"_predicted", "Download Data & Predictions")

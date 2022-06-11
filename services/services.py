@@ -82,6 +82,6 @@ def predict(df):
     prediction = model.predict(data_new)
 
     # new df extra coloumn
-    df['av_training_set'] = prediction
+    df['predicted'] = prediction
 
     return df

@@ -31,7 +31,7 @@ def app(data):
 
 
     # defining surface and axes
-    fig = px.scatter(data_frame=data, x=option_1, y=option_2, title='Scatter plot',color='av_training_set', width=700, height=700)
+    fig = px.scatter(data_frame=data, x=option_1, y=option_2, title='Scatter plot',color='predicted', width=700, height=700)
     fig.update_traces(marker_size = 2.5)
     st.plotly_chart(fig)
 
