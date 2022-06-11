@@ -6,6 +6,11 @@
 
 This is a standalone web-app used for classification of planetary data. The web-app can be setup by following the shown steps.
 
+### Prerequisites
+
+1. Python3 installed so as to run `python3` commands.
+2. Latest versionn of `pip` installed.
+
 ### Steps
 
 1. Open your bash terminal.
