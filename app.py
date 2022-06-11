@@ -8,18 +8,7 @@ from pages import show, analysis, help, custom, download, three_d, about
 
 
 st.set_page_config(page_title='Kepler', page_icon='images/favicon.jpg')
-set_background('./images/background.jpg')
-
-page_bg_img = '''
-<style>
-body {
-background-image: url("./images/background.jpg");
-background-size: cover;
-}
-</style>
-'''
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
+set_background('images/background.png')
 
 file = st.file_uploader('Upload CSV file',
                         type='csv', help="Please refer below for the format of CSV file.")
@@ -42,7 +31,7 @@ if file:
         err = '<p style="font-family:Courier; color:Red; font-size: 20px;">' + \
             error_msg+': Please follow the format</p>'
         st.markdown(err, unsafe_allow_html=True)
-        show_format()
+        show_format("services/format.json")
 else:
-    show_format()
+    show_format("services/format.json")
     # @Arvind
