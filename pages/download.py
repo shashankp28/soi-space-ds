@@ -5,7 +5,7 @@ from io import BytesIO
 
 @st.cache
 def convert_df(df):
-    return df.to_csv().encode('utf-8')
+    return df.to_csv(index=False).encode('utf-8')
 
 
 @st.cache
@@ -22,14 +22,13 @@ def to_excel(df):
     return processed_data
 
 
-def app(df, name):
-    st.markdown("### Download Predictions")
-    output_name = name.split(".csv")[0]+"_predicted"
+def download_block(df, file_name, title):
+    st.markdown("### "+title)
     st.markdown("##### Set File name")
-    col1, col2, col3 = st.columns(3)
     csv = convert_df(df)
     df_xlsx = to_excel(df)
-    name = st.text_input('*No extension', output_name)
+    name = st.text_input('*No extension', file_name)
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.download_button("📥 Download CSV",
                            data=csv,
@@ -42,3 +41,11 @@ def app(df, name):
         st.download_button(label='📥 Download Excel',
                            data=df_xlsx,
                            file_name=name+".xlsx")
+
+
+def app(df, name):
+    file_name = name.split(".csv")[0]
+    df2 = df.copy(deep=True)
+    df2 = df2["av_training_set"]
+    download_block(df2, file_name+"_predictions", "Download Only Predictions")
+    download_block(df, file_name+"_predicted", "Download Data & Predictions")
