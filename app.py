@@ -17,6 +17,17 @@ def show_format():
 
 st.set_page_config(page_title='Kepler', page_icon='images/favicon.jpg')
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("./images/background.jpg");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 file = st.file_uploader('Upload CSV file',
                         type='csv', help="Please refer below for the format of CSV file.")
 if file:

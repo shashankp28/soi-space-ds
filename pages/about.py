@@ -4,62 +4,55 @@ import streamlit as st
 
 def app():
     st.header('About Us')
-    st.markdown("<p style='text-align: justify;'> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<p>", unsafe_allow_html=True)
-
     st.subheader('Team Details')
 
     col1, col2, col3 = st.columns(3)
-    original = Image.open('../images/1.jpeg')
+    original = Image.open('./images/1.jpeg')
     original = original.resize((200, 250), Image.ANTIALIAS)
     col1.image(original, use_column_width=True)
-    original = Image.open('../images/download.png')
+    original = Image.open('./images/2.jpeg')
     original = original.resize((200, 250), Image.ANTIALIAS)
     col2.image(original, use_column_width=True)
-    original = Image.open('../images/download.png')
+    original = Image.open('./images/3.jpeg')
     original = original.resize((200, 250), Image.ANTIALIAS)
     col3.image(original, use_column_width=True)
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        expander = st.expander("See explanation")
+        expander = st.expander("Details")
         expander.write("""
-            The chart above shows some numbers I picked for you.
-            I rolled actual dice for these, so they're *guaranteed* to
-            be random.
+            Shashank P\n
+            Contact: 200010048@iitdh.ac.in
         """)
     with col2:
-        expander = st.expander("See explanation")
+        expander = st.expander("Details")
         expander.write("""
-            The chart above shows some numbers I picked for you.
-            I rolled actual dice for these, so they're *guaranteed* to
-            be random.
+            Anand Hegde\n
+            200020007@iitdh.ac.in
         """)
     with col3:
-        expander = st.expander("See explanation")
+        expander = st.expander("Details")
         expander.write("""
-            The chart above shows some numbers I picked for you.
-            I rolled actual dice for these, so they're *guaranteed* to
-            be random.
+            Arvind Kumar M\n
+            200020008@iitdh.ac.in
         """)
-    col1, col2 = st.columns(2)
-    original = Image.open('../images/4.jpeg')
+    col1, col2, col3 = st.columns(3)
+    original = Image.open('./images/4.jpeg')
     original = original.resize((300, 450), Image.ANTIALIAS)
     col1.image(original, use_column_width=True)
-    original = Image.open('../images/5.jpeg')
+    original = Image.open('./images/5.jpeg')
     original = original.resize((300, 450), Image.ANTIALIAS)
     col2.image(original, use_column_width=True)
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     with col1:
-        expander = st.expander("See explanation")
+        expander = st.expander("Details")
         expander.write("""
-            The chart above shows some numbers I picked for you.
-            I rolled actual dice for these, so they're *guaranteed* to
-            be random.
+            Harrithha B\n
+            200010018@iitdh.ac.in
         """)
     with col2:
-        expander = st.expander("See explanation")
+        expander = st.expander("Details")
         expander.write("""
-            The chart above shows some numbers I picked for you.
-            I rolled actual dice for these, so they're *guaranteed* to
-            be random.
+           Kavali Sri Vyshnavi Devi\n
+           200010023@iitdh.ac.in
         """)
