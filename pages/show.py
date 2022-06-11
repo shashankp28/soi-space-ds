@@ -31,7 +31,7 @@ def app(data):
         st.dataframe(data)
     else:
         columns = st.multiselect('Select Columns', data.columns.tolist(
-        )+['All'], default=[data.columns.tolist()[1], data.columns.tolist()[-1]])
+        )+['All'], default=[data.columns.tolist()[0], data.columns.tolist()[1], data.columns.tolist()[-1]])
 
         if 'All' in columns:
             columns = data.columns.tolist()
