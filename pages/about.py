@@ -22,19 +22,19 @@ def app():
         expander = st.expander("Details")
         expander.write("""
             Shashank P\n
-            Contact: 200010048@iitdh.ac.in
+            📧 200010048@iitdh.ac.in
         """)
     with col2:
         expander = st.expander("Details")
         expander.write("""
             Anand Hegde\n
-            200020007@iitdh.ac.in
+            📧 200020007@iitdh.ac.in
         """)
     with col3:
         expander = st.expander("Details")
         expander.write("""
             Arvind Kumar M\n
-            200020008@iitdh.ac.in
+            📧 200020008@iitdh.ac.in
         """)
     col1, col2, col3 = st.columns(3)
     original = Image.open('./images/4.jpeg')
@@ -48,11 +48,11 @@ def app():
         expander = st.expander("Details")
         expander.write("""
             Harrithha B\n
-            200010018@iitdh.ac.in
+            📧 200010018@iitdh.ac.in
         """)
     with col2:
         expander = st.expander("Details")
         expander.write("""
            Kavali Sri Vyshnavi Devi\n
-           200010023@iitdh.ac.in
+           📧 200010023@iitdh.ac.in
         """)

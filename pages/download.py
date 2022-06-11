@@ -26,10 +26,10 @@ def app(df, name):
     st.markdown("### Download Predictions")
     output_name = name.split(".csv")[0]+"_predicted"
     st.markdown("##### Set File name")
-    name = st.text_input('*No extension', output_name)
     col1, col2, col3 = st.columns(3)
     csv = convert_df(df)
     df_xlsx = to_excel(df)
+    name = st.text_input('*No extension', output_name)
     with col1:
         st.download_button("📥 Download CSV",
                            data=csv,

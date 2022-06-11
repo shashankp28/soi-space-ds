@@ -34,4 +34,3 @@ if file:
         show_format("services/format.json")
 else:
     show_format("services/format.json")
-    # @Arvind
