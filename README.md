@@ -51,7 +51,7 @@ Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 
 ### Using the application
 
 1. Initially upload a csv file in the format shown in the web-app.
-2. Next navigate to the **_Help_** tab from the side nav bar.
+2. Next navigate to the **_Docs_** tab from the side nav bar.
 3. Detailed instructions on using the application is given, including a short video.
 
 ### Note
@@ -64,7 +64,7 @@ Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 
      <br>
 
 - Documentation for ML model is named as `Documentation_Kepler.pdf`
-- Documentation for the Web-App can be found under the `help` tab of the Web-App itself.
+- Documentation for the Web-App can be found under the `Docs` tab of the Web-App itself.
 - The predictions are present in the `predicted` coloumn in downloaded files.
 
 _The Random Forest Model couldn't be incorporated as it's size was around 3.5 GB and would not be feasible for a stand-alone application. The model can be run on Google Colab._
