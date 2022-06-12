@@ -67,6 +67,6 @@ Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 
 - Documentation for the Web-App can be found under the `help` tab of the Web-App itself.
 - The predictions are present in the `predicted` coloumn in downloaded files.
 
-_The Random Forext Model couldn't be incorporated as it's size was around 3.5 GB and would not be feasible for a standalone application._
+_The Random Forest Model couldn't be incorporated as it's size was around 3.5 GB and would not be feasible for a stand-alone application. The model can be run on Google Colab._
 
 - Link to Model: [Random Forest](https://drive.google.com/file/d/1MTWGQinxfvbYmVzOYc4AGZO26kWE11xA/view?usp=sharing)
