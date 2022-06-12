@@ -1,7 +1,9 @@
-from PIL import Image
-import streamlit.components.v1 as components
+import streamlit as st
+import webbrowser
+from os import path
 
 
 def app():
-    with open("./components/about.html", "r") as f:
-        components.html(f.read(), height=1000000)
+    url = path.abspath("components/about.html")
+    if st.button('About Us Page'):
+        webbrowser.open_new_tab(url)

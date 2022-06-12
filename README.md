@@ -2,6 +2,9 @@
 
 ### This software is shared under MIT License.
 
+- Documentation for ML model is named as `Documentation_Kepler.pdf`
+- Documentation for Web-App can be found under the `help` tab of the Web-App itself.
+
 ## Team Kepler
 
 This is a standalone web-app used for classification of planetary data. The web-app can be setup by following the shown steps.
@@ -32,7 +35,8 @@ cd soi-space-ds
 chmod 755 setup.sh && ./setup.sh
 ```
 
-_When prompted, choose whether to install packages on a virtual environment._
+_When prompted, choose whether to install packages on a virtual environment. **yes** recommended_
+_When prompted to download Rondom Forest Model please type **yes** (3.2 GB)._
 
 5. Host the web-app locally using the following command
 

@@ -3,6 +3,7 @@ import streamlit as st
 import warnings
 warnings.filterwarnings("ignore")
 
+
 def check_format(df):
     # correct = True
     error_msg = ""
@@ -77,7 +78,12 @@ def predict(df):
         data_new[i] -= mean[i]
         data_new[i] /= std_dev[i]
 
-    model = pickle.load(open('./ML/model.pkl', "rb"))
+    try:
+        model = pickle.load(open('./ML/rfc.pkl', "rb"))
+        model_type = "rfc"
+    except:
+        model = pickle.load(open('./ML/nnc.pkl', "rb"))
+        model_type = "cnn"
 
     # prediction coloumn
     prediction = model.predict(data_new)
@@ -85,4 +91,4 @@ def predict(df):
     # new df extra coloumn
     df['predicted'] = prediction
 
-    return df
+    return df, model_type
