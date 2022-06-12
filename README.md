@@ -65,3 +65,4 @@ Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 
 
 - Documentation for ML model is named as `Documentation_Kepler.pdf`
 - Documentation for the Web-App can be found under the `help` tab of the Web-App itself.
+- The predictions are present in the `predicted` coloumn in downloaded files.

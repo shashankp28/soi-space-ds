@@ -1,5 +1,6 @@
 sudo apt-get update
 sudo apt-get upgrade
+sudo apt-get install python3-venv
 while true; do
     read -p "Do you wish to setup up a vitual environment to install packages? (recommended) [Y/n] " yn
     case $yn in

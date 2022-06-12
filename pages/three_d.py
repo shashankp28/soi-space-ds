@@ -40,5 +40,5 @@ def app(data):
     # defining surface and axes
     fig = px.scatter_3d(data_frame=data, x=option_1, y=option_2, z=option_3,
                         title='3D Plot', width=700, height=700, color='predicted')
-    fig.update_traces(marker_size=2.5)
+    fig.update_traces(marker_size=1.5)
     st.plotly_chart(fig)

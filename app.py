@@ -5,7 +5,7 @@ from services.design import *
 from services.services import *
 from services.multiapp import MultiApp
 from functools import partial
-from pages import show, analysis, help, custom, download, three_d, about
+from pages import show, analysis, docs, custom, download, three_d, about
 
 
 st.set_page_config(page_title='Kepler',
@@ -29,7 +29,7 @@ if file:
         app.add_app('3-D Plots', partial(three_d.app, data))
         app.add_app('Download', partial(download.app, data, file.name))
         app.add_app('About Us', about.app)
-        app.add_app('Help', help.app)
+        app.add_app('Docs', docs.app)
         app.run()
     else:
         err = '<p style="font-family:Courier; color:Red; font-size: 20px;">' + \
