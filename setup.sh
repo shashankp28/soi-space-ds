@@ -24,7 +24,7 @@ fi
 streamlit run app.py
 EOL
 while true; do
-    read -p "For better classification, download our Random Forest Model (3.2 GB) (recommended) [Y/n]" yn
+    read -p "For better classification, download our Random Forest Model (3.2 GB) (recommended) [Y/n] " yn
     case $yn in
         [Yy]* ) wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1MTWGQinxfvbYmVzOYc4AGZO26kWE11xA' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1MTWGQinxfvbYmVzOYc4AGZO26kWE11xA" -O ML/rfc.pkl && rm -rf /tmp/cookies.txt;
                 break;;
