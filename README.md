@@ -64,7 +64,7 @@ Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 
      <br>
 
 - Documentation for ML model is named as `Documentation_Kepler.pdf`
-- Documentation for the Web-App can be found under the `help` tab of the Web-App itself.
+- Documentation for the Web-App can be found under the `Docs` tab of the Web-App itself.
 - The predictions are present in the `predicted` coloumn in downloaded files.
 
 _The Random Forext Model couldn't be incorporated as it's size was around 3.5 GB and would not be feasible for a standalone application._
