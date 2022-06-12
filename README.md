@@ -34,7 +34,6 @@ chmod 755 setup.sh && ./setup.sh
 ```
 
 _When prompted, choose whether to install packages on a virtual environment. **yes** recommended_
-_When prompted to download Rondom Forest Model please type **yes** (3.2 GB)._
 
 5. Host the web-app locally using the following command
 
@@ -67,3 +66,7 @@ Once the setup is complete, the web-app can be opened using _loalhost_ **_[Port 
 - Documentation for ML model is named as `Documentation_Kepler.pdf`
 - Documentation for the Web-App can be found under the `help` tab of the Web-App itself.
 - The predictions are present in the `predicted` coloumn in downloaded files.
+
+_The Random Forext Model couldn't be incorporated as it's size was around 3.5 GB and would not be feasible for a standalone application._
+
+- Link to Model: [Random Forest](https://drive.google.com/file/d/1MTWGQinxfvbYmVzOYc4AGZO26kWE11xA/view?usp=sharing)

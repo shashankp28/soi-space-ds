@@ -78,12 +78,8 @@ def predict(df):
         data_new[i] -= mean[i]
         data_new[i] /= std_dev[i]
 
-    try:
-        model = pickle.load(open('./ML/nnc.pkl', "rb"))
-        model_type = "nnc"
-    except:
-        model = pickle.load(open('./ML/rfc.pkl', "rb"))
-        model_type = "rfc"
+    model = pickle.load(open('./ML/nnc.pkl', "rb"))
+    model_type = "nnc"
 
     # prediction coloumn
     prediction = model.predict(data_new)
