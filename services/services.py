@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
-
+import warnings
+warnings.filterwarnings("ignore")
 
 def check_format(df):
     # correct = True
