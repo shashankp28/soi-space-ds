@@ -8,8 +8,9 @@ This is a standalone web-app used for classification of planetary data. The web-
 
 ### Prerequisites
 
-1. Python / Python3 installed.
-2. Latest versionn of `pip` installed.
+1. Linux system.
+2. Python / Python3 installed.
+3. Latest version of `pip` installed.
 
 ### Steps
 
