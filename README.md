@@ -26,8 +26,16 @@ git clone https://github.com/shashankp28/soi-space-ds.git
 ```
 cd soi-space-ds
 ```
+4. Run ***one*** of these commands to install tkinter, depending upon your system's python configuration (python / python3).
 
-4. Execute the **_setup.sh_** file to install dependencies and create `run.sh` file.
+```
+sudo apt-get install python3-tk
+```
+```
+sudo apt-get install python-tk
+```
+
+5. Execute the **_setup.sh_** file to install dependencies and create `run.sh` file.
 
 ```
 chmod 755 setup.sh && ./setup.sh
@@ -35,7 +43,7 @@ chmod 755 setup.sh && ./setup.sh
 
 _When prompted, choose whether to install packages on a virtual environment. **yes** recommended_
 
-5. Host the web-app locally using the following command
+6. Host the web-app locally using the following command
 
 ```
 ./run.sh
