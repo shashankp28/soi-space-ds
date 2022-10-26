@@ -1,44 +1,5 @@
 import pickle
-import streamlit as st
-import warnings
-warnings.filterwarnings("ignore")
-
-
-def check_format(df):
-    # correct = True
-    error_msg = ""
-    required_columns = {'kepid': 0, 'tce_plnt_num': 0, 'tce_rogue_flag': 0, 'tce_period': 0,
-                        'tce_period_err': 0, 'tce_time0bk': 0, 'tce_time0bk_err': 0, 'tce_impact': 0,
-                        'tce_impact_err': 0, 'tce_duration': 0, 'tce_duration_err': 0, 'tce_depth': 0,
-                        'tce_depth_err': 0, 'tce_model_snr': 0, 'tce_prad': 0, 'tce_prad_err': 0, 'tce_eqt': 0,
-                        'tce_eqt_err': 0, 'tce_insol': 0, 'tce_insol_err': 0, 'tce_steff': 0,
-                        'tce_steff_err': 0, 'tce_slogg': 0, 'tce_slogg_err': 0, 'tce_sradius': 0,
-                        'tce_sradius_err': 0}
-
-    columns = df.columns
-
-    for i in columns:
-        if(i not in required_columns.keys()):
-            df.drop(i, inplace=True, axis=1)
-
-        else:
-            if(required_columns[i] == 0):
-                required_columns[i] = 1
-            else:
-                df.drop(i, inplace=True, axis=1)
-
-    for i in required_columns:
-        if(required_columns[i] == 0):
-            error_msg = i + " column is missing"
-            return False, error_msg
-
-    types = df.dtypes
-    for i in required_columns:
-        if(types[i] != 'float64' and types[i] != 'int64'):
-            error_msg = "Data type of " + str(i) + " should be int or float "
-            return False, error_msg
-
-    return True, error_msg
+import pandas as pd
 
 
 def predict(df):
@@ -77,14 +38,22 @@ def predict(df):
     for i in mean:
         data_new[i] -= mean[i]
         data_new[i] /= std_dev[i]
-
-    model = pickle.load(open('./ML/nnc.pkl', "rb"))
-    model_type = "nnc"
+    print("setup")
+    model = pickle.load(open('./ML/model_rfc.pkl', "rb"))
+    model_type = "rfc"
+    print("load")
 
     # prediction coloumn
     prediction = model.predict(data_new)
+    print("predict")
 
     # new df extra coloumn
     df['predicted'] = prediction
 
+    print("Added")
+
     return df, model_type
+
+
+df = pd.read_csv("ML/test.csv")
+print(predict(df))
